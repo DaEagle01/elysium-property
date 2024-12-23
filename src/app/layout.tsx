@@ -8,8 +8,8 @@ import { Toaster } from "sonner"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Property Management Dashboard",
-  description: "Modern property management dashboard built with Next.js",
+  title: "Elysium Property Management",
+  description: "A modern property management dashboard",
 }
 
 export default function RootLayout({
