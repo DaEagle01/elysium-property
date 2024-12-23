@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Bell, Calendar, Home, LineChart, Mail, Menu, X } from 'lucide-react'
+import { Bell, Calendar, Home, LineChart, Mail, Menu } from 'lucide-react'
 import { Button } from "./ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { cn } from "@/lib/utils"

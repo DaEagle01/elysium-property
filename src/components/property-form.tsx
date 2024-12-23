@@ -274,9 +274,10 @@ export function PropertyForm({ onSubmit }: PropertyFormProps) {
                           mode="single"
                           selected={field.value}
                           onSelect={field.onChange}
-                          disabled={(date) =>
-                            date < new Date() || (form.getValues("checkInDate") && date < form.getValues("checkInDate"))
-                          }
+                          disabled={(date) => {
+                            const checkInDate = form.getValues("checkInDate");
+                            return date < new Date() || (checkInDate ? date < checkInDate : false);
+                          }}
                           initialFocus
                         />
                       </PopoverContent>
